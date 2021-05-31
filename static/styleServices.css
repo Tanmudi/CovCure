@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+#navbar{
+    background-color: cadetblue;
+    padding: 13px 4px;
+    font-family: 'Dela Gothic One', cursive;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+}
+#navbar ul{
+    display: inline;
+}
+#navbar li{
+    list-style: none;
+    display: inline;
+}
+#navbar li a{
+    text-decoration: none;
+    padding: 11px 28px;
+    font-size: 20px;
+    color: black;
+}
+#content{
+    border: 2px solid rgb(226, 214, 214);
+    height: 450px;    
+    background: center / cover no-repeat url(/static/service2.jpg);
+}
+#content h1{
+    /* border: 2px solid black; */
+    margin: 220px auto;
+    display: block;
+    width: 30%;
+    font-size: 60px;
+    text-align: center;
+    color: #5a0000;
+}
+#choices{
+    /* border: 2px solid black; */
+    height: 300px;
+}
+#title{
+    /* border: 2px solid blue; */
+    font-size: 30px;
+    display: block;
+    width: 50%;
+    margin: 30px auto;
+    text-align: center;
+}
+.card{
+    display: inline-block;
+    border: 2px solid gold;
+    border-radius: 15px;
+    width: 20%;
+    margin: 23px 30px;
+    height: 150px;
+}
+.card h3{
+    text-align: center;
+}
+.card-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.card-img{
+    height: 120px;
+}
+.card-img img{
+    width: 140px;
+    height: inherit;
+    padding: 0px 20px;
+}
+.card-content a{
+    padding: 0px;
+    font-size: 20px;
+    text-decoration: none;
+}
+#footer{
+    height: 48px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

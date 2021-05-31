@@ -1,0 +1,48 @@
+doctype html
+html
+  head
+    style
+      include ../static/styleServices.css
+  body
+    nav#navbar 
+        ul 
+            li #[a(href="/#") Home] 
+            li #[a(href="/#aboutsection") About]
+            li #[a(href="/services") Recipient]
+            li #[a(href="/Donor") Donor]
+            li #[a(href="/contact") Contact Us ]
+    div#content
+        h1 Services 
+    div#choices
+        div#title 
+            | All we have is what you require
+        div.card
+            h3 Transport
+            div.card-box
+                div.card-img
+                    img(src="/static/transport.png")
+                div.card-content
+                    p #[a(href="/services/transport") Get In] 
+        div.card
+            h3 Food 
+            div.card-box
+                div.card-img
+                    img(src="/static/food.jpg")
+                div.card-content
+                    p #[a(href="/services/food") Get In]  
+        div.card
+            h3 Medical Services
+            div.card-box
+                div.card-img
+                    img(src="/static/medical.png") 
+                div.card-content
+                    p #[a(href="/services/medical") Get In]  
+        div.card
+            h3 Blood and Plasma   
+            div.card-box
+                div.card-img
+                    img(src="/static/blood1.png")
+                div.card-content
+                    p #[a(href="/services/blood") Get In]  
+    footer#footer 
+        | Copyright © 2021 CovCure.com  |  All rights reserved 

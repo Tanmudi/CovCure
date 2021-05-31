@@ -1,0 +1,35 @@
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar 
+        ul 
+            li #[a(href="/#") Home] 
+            li #[a(href="/#aboutsection") About]
+            li #[a(href="/services") Recipient]
+            li #[a(href="/Donor") Donor]
+            li #[a(href="/contact") Contact Us ]
+    section#introsection 
+        h1 CovCure 
+        div#oneline
+          | We are always there for you  Available 24x7
+        div.quote
+          | "Part of being a person is about helping others."
+          div#writer
+            | -Regis Murayi
+    section#aboutsection 
+        h2 ABOUT 
+        div#abouthead
+          | We're a group of creative thinkers who have taken a step to change the world.
+          hr
+        div#aboutdetail
+          p During the pandemic, we came up with the idea of creating a platform that will be accessed freely by everyone and will be available for all to seek help. There are some people who have lost there jobs in this situation, who don't have proper facilities to survive. For these people, we have taken the initiative to provide them every possible help from our side.
+          br
+          p Every help like food, medical support, transport and clothes will be provided by us. For those who also want to join us and want to help for these can serve as volunteers and you may also donate money for these people or if you have any wast clothes, or if you have any contacts which can make it easy for us, please help us. Because we have no self profit in doing this. All the products which we provide are either donated by others or bought from the money you guys donated us.
+    footer#footer 
+        | Copyright © 2021 CovCure.com  |  All rights reserved 
+
+    script
+      include ../static/index.js

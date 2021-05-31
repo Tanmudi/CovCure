@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    style
+      include ../static/styleBlood.css
+  body
+    nav#navbar 
+        ul 
+            li #[a(href="/#") Home] 
+            li #[a(href="/#aboutsection") About]
+            li #[a(href="/services") Recipient]
+            li #[a(href="/Donor") Donor]
+            li #[a(href="/contact") Contact Us ]
+    div#container
+        h1 Blood Or Plasma
+        form(action="/services/blood", method="post", class="foodform")
+            input(type="text", class="bloodinput", name="name", placeholder="Enter your name")
+            input(type="phone", class="bloodinput", name="phone", placeholder="Enter your mobile number") 
+            input(type="email", class="bloodinput", name="email", placeholder="Enter your email")
+            input(type="text", class="bloodinput", name="address", placeholder="Enter your address")
+            input(type="integer", class="bloodinput", name="pincode", placeholder="Enter your pincode")
+            input(type="text", class="bloodinput", name="bg", placeholder="What is your Blood Group?")
+            input(type="text", class="bloodinput", name="bp", placeholder="Blood Or Plasma ???")
+            button(class="btn") 
+                | Submit 

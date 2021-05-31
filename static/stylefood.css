@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+#navbar{
+    background-color: cadetblue;
+    padding: 13px 4px;
+    font-family: 'Dela Gothic One', cursive;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+}
+#navbar ul{
+    display: inline;
+}
+#navbar li{
+    list-style: none;
+    display: inline;
+}
+#navbar li a{
+    text-decoration: none;
+    padding: 11px 28px;
+    font-size: 20px;
+    color: black;
+}
+#container{
+    border: 2px solid red;
+    height: 910px;
+    background: center / cover no-repeat url(/static/foodbg.jpg);
+}
+#container h1{
+    /* border: 2px solid black; */
+    margin: 100px auto;
+    display: block;
+    width: 40%;
+    text-align: center;
+    font-size: 40px;
+}
+.foodform{
+    /* border: 2px solid black; */
+    display: block;
+    width: 35%;
+    margin: 5px auto;
+}
+.foodinput{
+    width: 90%;
+    color: black;
+    padding: 10px;
+    margin: 10px auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    outline: none;
+    display: block;
+    background-color: rgb(211 202 202);
+}
+.btn{
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(42, 112, 97);
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+    width: 20%;
+} 

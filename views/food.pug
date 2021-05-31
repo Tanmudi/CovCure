@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    style
+      include ../static/stylefood.css
+  body
+    nav#navbar 
+        ul 
+            li #[a(href="/#") Home] 
+            li #[a(href="/#aboutsection") About]
+            li #[a(href="/services") Recipient]
+            li #[a(href="/Donor") Donor]
+            li #[a(href="/contact") Contact Us ]
+    div#container
+        h1 Fill Your Details Here
+        form(action="/services/food", method="post", class="foodform")
+            input(type="text", class="foodinput", name="name", placeholder="Enter your name")
+            input(type="phone", class="foodinput", name="phone", placeholder="Enter your mobile number") 
+            input(type="email", class="foodinput", name="email", placeholder="Enter your email")
+            input(type="text", class="foodinput", name="address", placeholder="Enter your address")
+            input(type="integer", class="foodinput", name="pincode", placeholder="Enter your pincode")
+            input(type="integer", class="foodinput", name="members", placeholder="Enter total members")
+            button(class="btn") 
+                | Submit 

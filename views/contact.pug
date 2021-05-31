@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    style
+      include ../static/styleContact.css
+  body
+    nav#navbar 
+        ul 
+            li #[a(href="/#") Home] 
+            li #[a(href="/#aboutsection") About]
+            li #[a(href="/services") Recipient]
+            li #[a(href="/Donor") Donor]
+            li #[a(href="/contact") Contact Us ]
+    
+    div#content 
+        h1 Contact Us 
+        form(action="/contact", method="post", class="myform") 
+            input(type="text", class="myinput", name="name", placeholder="Enter your name")
+            input(type="phone", class="myinput", name="phone", placeholder="Enter your phone")
+            input(type="email", class="myinput", name="email", placeholder="Enter your email")
+            input(type="text", class="myinput", name="msg", placeholder="Enter your short message")
+            button(class="btn") 
+                | Submit 
+            

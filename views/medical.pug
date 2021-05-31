@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    style
+      include ../static/stylemedical.css
+  body
+    nav#navbar 
+        ul 
+            li #[a(href="/#") Home] 
+            li #[a(href="/#aboutsection") About]
+            li #[a(href="/services") Recipient]
+            li #[a(href="/Donor") Donor]
+            li #[a(href="/contact") Contact Us ]
+    
+    div#container
+        h1 Tell us your medical requirements 
+        form(action="/services/medical", method="post", class="medicalform")
+            input(type="text", class="medicalinput", name="name", placeholder="Enter your name")
+            input(type="phone", class="medicalinput", name="phone", placeholder="Enter your mobile number") 
+            input(type="email", class="medicalinput", name="email", placeholder="Enter your email")
+            input(type="text", class="medicalinput", name="address", placeholder="Enter your address")
+            input(type="integer", class="medicalinput", name="pincode", placeholder="Enter your pincode")
+            input(type="text", class="medicalinput", name="requirement", placeholder="What do you require ie. Masks, Sanitizers, faceshield, etc.")
+            input(type="text", class="medicalinput", name="covid", placeholder="Are you covid positive? (YES/NO)")
+            input(type="text", class="medicalinput", name="doctor", placeholder="Do you need a doctor to consult? (YES/NO)")
+            input(type="text", class="medicalinput", name="msg", placeholder="Message")
+            button(class="btn") 
+                | Submit 

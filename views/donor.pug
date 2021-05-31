@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    style
+      include ../static/styledonor.css
+  body
+    nav#navbar 
+        ul 
+            li #[a(href="/#") Home] 
+            li #[a(href="/#aboutsection") About]
+            li #[a(href="/services") Recipient]
+            li #[a(href="/Donor") Donor]
+            li #[a(href="/contact") Contact Us ]
+    
+    div#container
+        h1 Blood or Plasma Recipients 
+        ol 
+        each blood in bloods
+          br 
+          li #{blood.name} &nbsp;&nbsp; #{blood.phone} &nbsp;&nbsp; #{blood.email} &nbsp;&nbsp; #{blood.address} &nbsp;&nbsp; #{blood.bg} &nbsp;&nbsp; #{blood.bp} 
+            

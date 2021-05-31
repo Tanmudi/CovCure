@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    style
+      include ../static/styletransport.css
+  body
+    nav#navbar 
+        ul 
+            li #[a(href="/#") Home] 
+            li #[a(href="/#aboutsection") About]
+            li #[a(href="/services") Recipient]
+            li #[a(href="/Donor") Donor]
+            li #[a(href="/contact") Contact Us ]
+
+    div#content 
+        h1 Fill the Transport Form 
+        form(action="/services/transport", method="post", class="myform") 
+            input(type="text", class="myinput", name="name", placeholder="Enter your name")
+            input(type="phone", class="myinput", name="phone", placeholder="Enter your phone")
+            input(type="email", class="myinput", name="email", placeholder="Enter your email")
+            input(type="text", class="myinput", name="address", placeholder="Enter your Address")
+            input(type="number", class="myinput", name="pincode", placeholder="Enter your pincode")
+            input(type="number", class="myinput", name="members", placeholder="Enter no. of memebers")
+            input(type="text", class="myinput", name="boarding", placeholder="Enter boarding location")
+            input(type="text", class="myinput", name="destination", placeholder="Enter destination location")
+            button(class="btn") 
+                | Submit 

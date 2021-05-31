@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ravi+Prakash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+#navbar{
+    background-color: cadetblue;
+    padding: 13px 4px;
+    font-family: 'Dela Gothic One', cursive;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+}
+#navbar ul{
+    display: inline;
+}
+#navbar li{
+    list-style: none;
+    display: inline;
+}
+#navbar li a{
+    text-decoration: none;
+    padding: 11px 28px;
+    font-size: 20px;
+    color: black;
+}
+#introsection{
+    border: 2px solid rgb(133, 214, 160);
+    background: center / cover no-repeat url("/static/bg2.jpg");
+    height: 894px;
+    background-color: yellow;
+}
+#introsection h1{
+    /* border: 2px solid greenyellow; */
+    margin: 124px auto;
+    color: rgb(90, 39, 39);
+    display: block;
+    font-size: 60px;
+    width: 30%;
+    text-align: center;
+}
+
+#oneline{
+    /* border: 2px solid red; */
+    margin-top: 150px;
+    font-family: 'Ravi Prakash', cursive;
+    font-size: 40px;
+    width: 30%;
+}
+.quote{
+    border: 2px solid black;
+    width: 33%;
+    font-size: 27px;
+    text-align: center;
+    margin: 58px 0px;
+    padding: 10px;
+}
+#writer{
+    text-align: right;
+    padding: 18px 0px;
+}
+#aboutsection{
+    height: 600px;
+    /* font-size: 20px; */
+    color: rgb(0, 0, 0);
+    background-color: #d5c7b6;
+    border: 2px solid #e3c6c6;
+}
+#aboutsection h2{
+    /* border: 2px solid blue; */
+    display: block;
+    margin: 42px 0px;
+    font-size: 40px;
+}
+#abouthead{
+    /* border: 2px solid brown; */
+    font-weight: bold;
+    width: 70%;
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+    font-size: 35px;
+}
+#aboutdetail{
+    /* border: 2px solid grey; */
+    font-size: 25px;
+    margin: 50px auto;
+    width: 95%;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+#footer{
+    height: 48px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
